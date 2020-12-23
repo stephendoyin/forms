@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img src="images/logo.png" alt="logo" class="logo" height="50px" />
+      <div class="flex">
+        <div class="flex__left-container">
+          <img src="images/token.svg" alt="" />
+        </div>
+        <div class="flex__right-container">
+          <div class="flex__inner">
+            <div class="mobile__img-container">
+              <img src="images/token.svg" alt="" />
+            </div>
+
+            <div class="flex flex__align">
+              <div class="avatar">
+                <img src="images/avatar.png" alt="" />
+              </div>
+
+              <span style="color: #144175"> Hi John Doe, </span>
+            </div>
+            <h2>Hospital Registration</h2>
+            <br />
+            <form action="">
+              <div class="input__container">
+                <input type="text" required placeholder="Name" />
+                <input type="text" required placeholder="Phone number" />
+              </div>
+              <input type="text" required placeholder="Enter email" />
+              <input type="text" required placeholder="Hospital name" />
+              <textarea
+                name=""
+                placeholder="Address of Hospital"
+                id=""
+                required
+              ></textarea>
+              <textarea
+                name=""
+                required
+                placeholder="Details of Chief Medical Director"
+                id=""
+              ></textarea>
+              <div style="margin-top: 1.5rem">
+                <input type="submit" class="btn" value="Proceed" />
+              </div>
+            </form>
+
+            <!-- <div class="select-custom">
+              <label class="title">Select Token Method</label>
+
+              <div class="select-box">
+                <div class="options-container">
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="film"
+                      name="category"
+                    />
+                    <label for="film">PayStack</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="science"
+                      name="category"
+                    />
+                    <label for="science">Flutterwave</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="art"
+                      name="category"
+                    />
+                    <label for="art">Interswitch</label>
+                  </div>
+                </div>
+
+                <div class="selected">Select...</div>
+              </div>
+            </div> -->
+          </div>
+          <img src="images/pattern-down.png" class="down-pattern" alt="" />
+          <img src="images/pattern-up.png" class="up-pattern" alt="" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
