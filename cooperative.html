@@ -56,7 +56,12 @@
                   required
                   placeholder="Class of Cooperative"
                 />
-                <input type="date" required placeholder="Hospital name" />
+                <input
+                  type="text"
+                  class="date"
+                  required
+                  placeholder="Date of Inauguration"
+                />
               </div>
               <textarea
                 name=""
@@ -74,5 +79,14 @@
         </div>
       </div>
     </main>
+    <script>
+      const inputDate = document.querySelector(".date");
+      inputDate.addEventListener("focus", function () {
+        inputDate.type = "date";
+      });
+      inputDate.addEventListener("blur", function () {
+        inputDate.type = "text";
+      });
+    </script>
   </body>
 </html>
