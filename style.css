@@ -510,10 +510,22 @@ textarea:focus {
   align-items: center;
   justify-content: space-between;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 .offer__box {
-  width: 31%;
+  width: 48%;
   border: 1px solid #144175;
   border-radius: 6px;
   padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 540px) {
+  .offer__box {
+    width: 31%;
+    border: 1px solid #144175;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+  }
 }
