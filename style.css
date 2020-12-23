@@ -41,7 +41,7 @@ main {
     #2573ba 0%,
     #041860 100%
   );
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ main {
 
 .flex__left-container img {
   text-align: center;
-  width: 67%;
+  width: 100%;
 }
 
 .flex__right-container {
@@ -239,14 +239,6 @@ p {
   justify-content: space-between;
 }
 
-.token__box.default {
-  width: 55%;
-  min-height: 10rem;
-}
-.token__box:nth-child(2) {
-  width: 42%;
-}
-
 .token__box:hover {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
@@ -260,6 +252,12 @@ p {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 650px) {
+  .token {
+    width: 500px;
+  }
 }
 
 a {
@@ -307,6 +305,11 @@ textarea {
   border-radius: 6px;
   width: 100%;
   margin-bottom: 1rem;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #144175;
 }
 
 .input__file {
