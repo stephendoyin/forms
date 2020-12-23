@@ -34,60 +34,39 @@
 
               <span style="color: #144175"> Hi John Doe, </span>
             </div>
-            <h2>What is your IPPIS number?</h2>
+            <h2>Personal Information</h2>
             <br />
             <form action="">
-              <input type="text" required placeholder="Enter IPPIS nuber" />
+              <div class="input__container">
+                <input type="email" required placeholder="Email address" />
+                <input
+                  type="text"
+                  class="date"
+                  required
+                  placeholder="Date of Birth"
+                />
+              </div>
+              <input type="text" required placeholder="BVN" />
 
               <div style="margin-top: 1.5rem">
-                <input type="submit" class="btn" value="Proceed" />
+                <input type="submit" class="btn" value="Continue" />
               </div>
             </form>
-
-            <!-- <div class="select-custom">
-              <label class="title">Select Token Method</label>
-
-              <div class="select-box">
-                <div class="options-container">
-                  <div class="option">
-                    <input
-                      type="radio"
-                      class="radio"
-                      id="film"
-                      name="category"
-                    />
-                    <label for="film">PayStack</label>
-                  </div>
-
-                  <div class="option">
-                    <input
-                      type="radio"
-                      class="radio"
-                      id="science"
-                      name="category"
-                    />
-                    <label for="science">Flutterwave</label>
-                  </div>
-
-                  <div class="option">
-                    <input
-                      type="radio"
-                      class="radio"
-                      id="art"
-                      name="category"
-                    />
-                    <label for="art">Interswitch</label>
-                  </div>
-                </div>
-
-                <div class="selected">Select...</div>
-              </div>
-            </div> -->
           </div>
           <img src="images/pattern-down.png" class="down-pattern" alt="" />
           <img src="images/pattern-up.png" class="up-pattern" alt="" />
         </div>
       </div>
     </main>
+
+    <script>
+      const date = document.querySelector(".date");
+      date.addEventListener("focus", function () {
+        date.type = "date";
+      });
+      date.addEventListener("blur", function () {
+        date.type = "text";
+      });
+    </script>
   </body>
 </html>

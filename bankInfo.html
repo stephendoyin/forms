@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img src="images/logo.png" alt="logo" class="logo" height="50px" />
+      <div class="flex">
+        <div class="flex__left-container">
+          <img src="images/token.svg" alt="" />
+        </div>
+        <div class="flex__right-container">
+          <div class="flex__inner">
+            <div class="mobile__img-container">
+              <img src="images/token.svg" alt="" />
+            </div>
+
+            <div class="flex flex__align">
+              <div class="avatar">
+                <img src="images/avatar.png" alt="" />
+              </div>
+
+              <span style="color: #144175"> Hi John Doe, </span>
+            </div>
+            <h2>Bank Information</h2>
+            <br />
+            <form action="">
+              <div class="custom-select" style="margin-bottom: 1rem">
+                <select>
+                  <option value="0">Select Bank</option>
+                  <option value="1">First Bank</option>
+                  <option value="2">GTBank</option>
+                  <option value="3">FCMB</option>
+                  <option value="4">Zenith Bank</option>
+                  <option value="5">Eco Bank</option>
+                  <option value="6">WEMA Bank</option>
+                  <option value="7">Access Bank</option>
+                  <option value="8">Diamond Access</option>
+                </select>
+              </div>
+
+              <input type="email" required placeholder="Account Name" />
+              <input type="text" required placeholder="Account Number" />
+
+              <div style="margin-top: 1.5rem">
+                <input type="submit" class="btn" value="Continue" />
+              </div>
+            </form>
+          </div>
+          <img src="images/pattern-down.png" class="down-pattern" alt="" />
+          <img src="images/pattern-up.png" class="up-pattern" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <script src="select.js"></script>
+  </body>
+</html>
